@@ -77,27 +77,3 @@ class ListTileWidget extends StatelessWidget {
     );
   }
 }
-
-
-
-class BodyWidget extends StatelessWidget {
-  const BodyWidget({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: ListTile(
-        title: Text('SSS', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-        subtitle: Text('Demo List 1'),
-        trailing: Icon(Icons.keyboard_arrow_right),
-        onTap: (){
-          print('SSS');
-        },
-        dense: true,
-        selected: false,
-        enabled: true,
-      ),
-    );
-  }
-}
-
